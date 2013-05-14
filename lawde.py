@@ -93,6 +93,7 @@ class Lawde(object):
         return [l['slug'] for l in json.load(file(self.lawlist))]
 
     def loadall(self):
+        self.update_list()
         self.load(self.get_all_laws())
 
     def update_list(self):
